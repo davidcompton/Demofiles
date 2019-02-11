@@ -1,0 +1,30 @@
+<% include partials/header.ejs %>
+    <div class="table-wrapper">
+        <% if (resultset1.length > 0) {%>
+            <table class="table table-hovered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Filter Date</th>
+                        <th scope="col">Site ID</th>
+                        <th scope="col">Product Family</th>
+                        <th scope="col">Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% resultset1.forEach((resultsetdetail, index) => { %>
+                        <tr>
+                            <th scope="row"><%= resultsetdetail.FILTER_DATE %></th>
+                            <td><%= resultsetdetail.SITE_ID %></td>
+                            <td><%= resultsetdetail.PRODUCT_TYPE %></td>
+                            <td><%= resultsetdetail.STOCK %></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="text-center">No resultset1 found. Go <a href="/add" >here</a> to add resultset1.</p>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>
