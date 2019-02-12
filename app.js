@@ -15,9 +15,9 @@ const port = 2000;
 // create connection to database
 // the mysql.createConnection function takes in a configuration object which contains host, user, password and the database name.
 const db = mysql.createConnection ({
-    host: 'stobart-biomass-pre-production.cgf2ymxwi0yr.eu-west-2.rds.amazonaws.com',
+    host: '',
     user: 'root',
-    password: 'root_password',
+    password: '',
     database: 'blinxdev' 
 });
 
