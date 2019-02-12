@@ -5,6 +5,9 @@ const mysql = require('mysql');
 const path = require('path');
 const app = express();
 
+
+
+
 const {getHomePage} = require('./routes/index');
 const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
 const port = 2000;
@@ -15,7 +18,7 @@ const db = mysql.createConnection ({
     host: 'stobart-biomass-pre-production.cgf2ymxwi0yr.eu-west-2.rds.amazonaws.com',
     user: 'root',
     password: 'root_password',
-    database: 'blinxdev'
+    database: 'blinxdev' 
 });
 
 // connect to database

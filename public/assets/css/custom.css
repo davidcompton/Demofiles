@@ -1,0 +1,46 @@
+.block {
+    height: 20px;
+    width: 100px;
+    background-color: black;
+    }
+    .box {
+    width: 150px;
+    height: 50px;
+    float: left
+    }
+    .trigger {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 10px;
+    background-image: url(/assets/images/big_round_one.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    }
+    
+    .popcircle {
+    position: absolute;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    }
+    .popcircle ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    cursor: pointer;
+    }
+    .popcircle ul li {
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    }
+    img {
+    border:0;
+    }
